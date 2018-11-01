@@ -6,6 +6,10 @@ from sqlalchemy import create_engine
 Base = declarative_base()
 
 # Write your classes here :
-class Product(Base):
-    # TODO: complete this class
-    pass
+class cello(Base):
+   __tablename__ = 'instruments'
+   id = Column(Integer, primary_key=True)
+   size = Column(Integer)
+   color = Column(String)
+   price= Column(Integer)
+
